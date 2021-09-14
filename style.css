@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+main {
+  background-image: url(./images/bg-pattern-top-mobile.svg),
+    url(./images/bg-pattern-bottom-mobile.svg);
+  background-position: top, bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container {
+  /* border: 1px solid black; */
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.heroText {
+  /* border: 1px solid black; */
+  text-align: center;
+}
+
+.heroText h1 {
+  margin-bottom: 1rem;
+  color: hsl(300, 43%, 22%);
+  /* text-align: center; */
+}
+
+.heroText p {
+  font-size: 0.87rem;
+  line-height: 1.7;
+  color: hsl(303, 10%, 53%);
+  /* text-align: center; */
+}
+
+.rating {
+  /* border: 1px solid black; */
+  margin: 3rem 0;
+}
+
+.rating-col {
+  /* border: 1px solid black; */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 0.5rem;
+}
+
+.rating-col .stars {
+  margin-bottom: 0.7rem;
+}
+
+.rating-col p {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 0.87rem;
+}
+
+.reviews,
+.report-guru {
+  margin-bottom: 1.5rem;
+}
+
+.testimonials {
+  /* border: 1px solid black; */
+}
+
+.testimonials-col {
+  padding: 2rem;
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
+  font-size: 0.77rem;
+  border-radius: 0.5rem;
+}
+
+.colton-smith,
+.irene-roberts {
+  margin-bottom: 1rem;
+}
+
+.profile {
+  /* border: 1px solid black; */
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.profile img {
+  max-width: 20%;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+.profile .profile-name {
+  display: flex;
+  flex-direction: column;
+  align-tracks: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.profile-name .verifiedBuyer {
+  color: hsla(333, 80%, 67%, 0.6);
+  margin-top: 0.3rem;
+  font-weight: 400;
+}
+
+.testimonialText {
+  line-height: 1.8;
+}
+
+@media (min-width: 23.5rem) {
+  .container {
+    max-width: 19.922rem;
+  }
+}
+
+@media (min-width: 68.75rem) {
+  main {
+    background-image: url(./images/bg-pattern-top-desktop.svg),
+      url(./images/bg-pattern-bottom-desktop.svg);
+    background-position: top 0 left -60%, bottom -80% right -10%;
+    background-size: 60%, 80%;
+  }
+
+  .container {
+    max-width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .heroText,
+  .rating {
+    /* border: 1px solid black; */
+    flex-basis: 50%;
+  }
+
+  .heroText {
+    margin-top: 3rem;
+    text-align: left;
+  }
+
+  .heroText h1 {
+    font-size: 2.9rem;
+    margin-right: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .heroText p {
+    font-size: 1rem;
+    margin-right: 4rem;
+    font-weight: 500;
+  }
+
+  .rating {
+    margin-top: 3.5rem;
+    margin-bottom: 0rem;
+  }
+
+  .rating-col {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 88%;
+  }
+
+  .rating-col .stars {
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+
+  .rating-col p {
+    font-size: 0.9375rem;
+  }
+
+  .reviews,
+  .report-guru {
+    margin-bottom: 2rem;
+  }
+
+  .report-guru {
+    margin-left: 2rem;
+  }
+
+  .bestTech {
+    margin-left: 4.5rem;
+  }
+
+  .testimonials {
+    /* border: 1px solid black; */
+    display: flex;
+    /* padding: 3rem 0;
+    padding-bottom: 0rem; */
+    margin-top: 4rem;
+    align-items: flex-start;
+  }
+
+  .testimonials-col {
+    max-width: 100%;
+  }
+
+  .testimonialText {
+    /* border: 1px solid black; */
+    padding-right: 0.8rem;
+  }
+
+  .colton-smith .testimonialText {
+    padding-right: 2.3rem;
+  }
+
+  .colton-smith,
+  .irene-roberts {
+    margin-bottom: 0rem;
+    margin-right: 2rem;
+  }
+
+  .irene-roberts {
+    margin-top: 1.5rem;
+  }
+
+  .anne-wallace {
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 85.3125rem) {
+  .container {
+    max-width: 58.438rem;
+  }
+}
