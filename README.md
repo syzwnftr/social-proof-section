@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL:https://syzwnftr.github.io/social-proof-section/
+- Live Site URL: https://syzwnftr.github.io/social-proof-section/
 
 ## My process
 
