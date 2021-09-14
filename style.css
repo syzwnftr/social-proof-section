@@ -128,7 +128,7 @@ main {
   main {
     background-image: url(./images/bg-pattern-top-desktop.svg),
       url(./images/bg-pattern-bottom-desktop.svg);
-    background-position: top 0 left -60%, bottom -80% right -10%;
+    background-position: top 0 left -60%, bottom -30% right -10%;
     background-size: 60%, 80%;
   }
 
@@ -149,8 +149,12 @@ main {
     text-align: left;
   }
 
+  /* .heroText > * {
+    border: 1px solid black;
+  } */
+
   .heroText h1 {
-    font-size: 2.9rem;
+    font-size: 3rem;
     margin-right: 4rem;
     margin-bottom: 1rem;
   }
@@ -159,11 +163,13 @@ main {
     font-size: 1rem;
     margin-right: 4rem;
     font-weight: 500;
+    padding-right: 2rem;
   }
 
   .rating {
     margin-top: 3.5rem;
     margin-bottom: 0rem;
+    padding: 1rem 0;
   }
 
   .rating-col {
@@ -182,13 +188,8 @@ main {
     font-size: 0.9375rem;
   }
 
-  .reviews,
   .report-guru {
-    margin-bottom: 2rem;
-  }
-
-  .report-guru {
-    margin-left: 2rem;
+    margin-left: 2.5rem;
   }
 
   .bestTech {
@@ -234,6 +235,6 @@ main {
 
 @media (min-width: 85.3125rem) {
   .container {
-    max-width: 58.438rem;
+    max-width: 75rem;
   }
 }
